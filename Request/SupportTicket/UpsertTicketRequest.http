@@ -1,0 +1,16 @@
+@id=1c1660ef-fb2a-4157-b124-5800577f24d1
+
+PUT http://localhost:5101/tickets/{{id}}
+Content-Type: application/json
+
+{
+    "Username": "Luuk",
+    "Email": "John@hotmail.com",
+    "Description": "I have a problem with my ASP.NET build",
+    "SubmitDate": "2023-02-02T11:00:00",
+    "Tags": [
+        ".NET6",
+        "Build",
+        "Dev"
+    ]
+}

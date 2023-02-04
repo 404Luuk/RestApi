@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "RestApi.Contracts/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/RestApi.Contracts.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/RestApi.Contracts.dll": {}
-        }
-      }
-    }
+    "net6.0": {}
   },
-  "libraries": {
-    "RestApi.Contracts/1.0.0": {
-      "type": "project",
-      "path": "../RestApi.Contracts/RestApi.Contracts.csproj",
-      "msbuildProject": "../RestApi.Contracts/RestApi.Contracts.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "RestApi.Contracts >= 1.0.0"
-    ]
+    "net6.0": []
   },
   "packageFolders": {
     "C:\\Users\\Gebruiker 1\\.nuget\\packages\\": {}
@@ -32,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\DEV\\REST_API\\RestApi\\RestApi\\RestApi.csproj",
-      "projectName": "RestApi",
-      "projectPath": "F:\\DEV\\REST_API\\RestApi\\RestApi\\RestApi.csproj",
+      "projectUniqueName": "F:\\DEV\\REST_API\\RestApi\\RestApi.Contracts\\RestApi.Contracts.csproj",
+      "projectName": "RestApi.Contracts",
+      "projectPath": "F:\\DEV\\REST_API\\RestApi\\RestApi.Contracts\\RestApi.Contracts.csproj",
       "packagesPath": "C:\\Users\\Gebruiker 1\\.nuget\\packages\\",
-      "outputPath": "F:\\DEV\\REST_API\\RestApi\\RestApi\\obj\\",
+      "outputPath": "F:\\DEV\\REST_API\\RestApi\\RestApi.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Gebruiker 1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,11 +33,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "F:\\DEV\\REST_API\\RestApi\\RestApi.Contracts\\RestApi.Contracts.csproj": {
-              "projectPath": "F:\\DEV\\REST_API\\RestApi\\RestApi.Contracts\\RestApi.Contracts.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -79,9 +56,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

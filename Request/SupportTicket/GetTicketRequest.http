@@ -1,0 +1,3 @@
+@id=eb839e88-4f68-46f2-9931-76c058b7175b
+
+GET http://localhost:5101/tickets/{{id}}
