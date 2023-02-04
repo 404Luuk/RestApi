@@ -9,6 +9,5 @@ public record TicketResponse(
     string Email,
     string Description,
     DateTime SubmitDate,
-    DateTime LastReview,
     List<string> Tags
 ) {}
