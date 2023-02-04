@@ -2,13 +2,12 @@ POST http://localhost:5101/tickets
 Content-Type: application/json
 
 {
-    "Username": "JohnDoe12",
-    "Email": "John@hotmail.com",
-    "Description": "I have a problem with my ASP.NET build",
-    "SubmitDate": "2023-02-02T11:00:00",
+    "Username": "JohnDoe312312",
+    "Email": "Johndsad@hotmail.com",
+    "Description": "I have AAAAAAA a problem with my ASP.NET build",
     "Tags": [
-        ".NET6",
-        "Build",
-        "Dev"
+        ".NET622",
+        "Build22",
+        "Dev22"
     ]
 }
