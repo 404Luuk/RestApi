@@ -1,0 +1,12 @@
+F:\DEV\REST_API\RestApi\RestApi.Contracts\bin\Debug\net6.0\RestApi.Contracts.deps.json
+F:\DEV\REST_API\RestApi\RestApi.Contracts\bin\Debug\net6.0\RestApi.Contracts.dll
+F:\DEV\REST_API\RestApi\RestApi.Contracts\bin\Debug\net6.0\RestApi.Contracts.pdb
+F:\DEV\REST_API\RestApi\RestApi.Contracts\obj\Debug\net6.0\RestApi.Contracts.csproj.AssemblyReference.cache
+F:\DEV\REST_API\RestApi\RestApi.Contracts\obj\Debug\net6.0\RestApi.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+F:\DEV\REST_API\RestApi\RestApi.Contracts\obj\Debug\net6.0\RestApi.Contracts.AssemblyInfoInputs.cache
+F:\DEV\REST_API\RestApi\RestApi.Contracts\obj\Debug\net6.0\RestApi.Contracts.AssemblyInfo.cs
+F:\DEV\REST_API\RestApi\RestApi.Contracts\obj\Debug\net6.0\RestApi.Contracts.csproj.CoreCompileInputs.cache
+F:\DEV\REST_API\RestApi\RestApi.Contracts\obj\Debug\net6.0\RestApi.Contracts.dll
+F:\DEV\REST_API\RestApi\RestApi.Contracts\obj\Debug\net6.0\refint\RestApi.Contracts.dll
+F:\DEV\REST_API\RestApi\RestApi.Contracts\obj\Debug\net6.0\RestApi.Contracts.pdb
+F:\DEV\REST_API\RestApi\RestApi.Contracts\obj\Debug\net6.0\ref\RestApi.Contracts.dll
