@@ -25,6 +25,7 @@ public class TicketController : ControllerBase
             request.Email,
             request.Description,
             DateTime.UtcNow,
+            DateTime.UtcNow,
             request.Tags
         );
 
@@ -36,6 +37,7 @@ public class TicketController : ControllerBase
             ticket.Email,
             ticket.Description,
             ticket.SubmitDate,
+            ticket.EditDate,
             ticket.Tags
         );
 
@@ -56,6 +58,7 @@ public class TicketController : ControllerBase
             ticket.Email,
             ticket.Description,
             ticket.SubmitDate,
+            ticket.EditDate,
             ticket.Tags
         );
 
@@ -71,6 +74,7 @@ public class TicketController : ControllerBase
             request.Email,
             request.Description,
             request.SubmitDate,
+            DateTime.UtcNow,
             request.Tags
         );
         _ticketService.UpsertTicket(ticket);

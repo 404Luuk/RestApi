@@ -7,6 +7,7 @@ public class Ticket
     public string Email { get; set; }
     public string Description { get;  }
     public DateTime SubmitDate { get; }
+    public DateTime EditDate { get; }
     public List<string> Tags { get;  }
 
     public Ticket(
@@ -15,6 +16,7 @@ public class Ticket
         string email,
         string description,
         DateTime submitDate,
+        DateTime editDate,
         List<string> tags
     ) 
     {
@@ -23,6 +25,7 @@ public class Ticket
         Email = email;
         Description = description;
         SubmitDate = submitDate;
+        EditDate = editDate;
         Tags = tags;
     }
 }

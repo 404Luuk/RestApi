@@ -1,0 +1,13 @@
+POST http://localhost:5101/tickets
+Content-Type: application/json
+
+{
+    "Username": "JohnDoe3",
+    "Email": "Johnd@hotmail.com",
+    "Description": "I have a problem with my ASP.NET build",
+    "Tags": [
+        ".NET6",
+        "Build",
+        "Dev23"
+    ]
+}

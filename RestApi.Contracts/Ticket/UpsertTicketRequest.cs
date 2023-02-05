@@ -8,5 +8,6 @@ public record UpsertTicketRequest(
     string Email,
     string Description,
     DateTime SubmitDate,
+    DateTime EditDate,
     List<string> Tags
 ) {}
