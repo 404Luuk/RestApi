@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace RestApi.Contracts.SupportTicket;
+namespace RestApi.Contracts.Ticket;
 
 public record TicketResponse(
     Guid Id,

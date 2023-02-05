@@ -1,6 +1,6 @@
 namespace RestApi.Models;
 
-public class SupportTicket 
+public class Ticket 
 {
     public Guid Id { get;  }
     public string Username { get;  }
@@ -9,7 +9,7 @@ public class SupportTicket
     public DateTime SubmitDate { get; }
     public List<string> Tags { get;  }
 
-    public SupportTicket(
+    public Ticket(
         Guid id, 
         string username,
         string email,

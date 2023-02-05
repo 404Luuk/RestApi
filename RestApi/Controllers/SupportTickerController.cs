@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using RestApi.Contracts.SupportTicket;
+using RestApi.Contracts.Ticket;
 using RestApi.Models;
 using RestApi.Services.Tickets;
 
@@ -7,11 +7,11 @@ namespace RestApi.Controllers;
 
 [ApiController]
 [Route("tickets")]
-public class SupportTicketController : ControllerBase 
+public class TicketController : ControllerBase 
 {
     private readonly ITicketService _ticketService;
 
-    public SupportTicketController(ITicketService ticketService)
+    public TicketController(ITicketService ticketService)
     {
         _ticketService = ticketService;
     }
@@ -19,7 +19,7 @@ public class SupportTicketController : ControllerBase
     [HttpPost]
     public IActionResult CreateTicket(CreateTicketRequest request) 
     {
-        var ticket = new SupportTicket(
+        var ticket = new Ticket(
             Guid.NewGuid(),
             request.Username,
             request.Email,
@@ -48,7 +48,7 @@ public class SupportTicketController : ControllerBase
     [HttpGet("{id:guid}")]
     public IActionResult ReturnTicket(Guid id) 
     {
-        SupportTicket ticket = _ticketService.GetTicket(id);
+        Ticket ticket = _ticketService.GetTicket(id);
 
         var response = new TicketResponse(
             ticket.Id,
@@ -65,7 +65,7 @@ public class SupportTicketController : ControllerBase
     [HttpPut("{id:guid}")]
     public IActionResult UpsertTicket(Guid id, UpsertTicketRequest request) 
     {
-            var ticket = new SupportTicket(
+            var ticket = new Ticket(
             id,
             request.Username,
             request.Email,
