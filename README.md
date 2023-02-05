@@ -25,7 +25,7 @@ POST /tickets
 	"username": "John Doe",
 	"email": "John12@gmail.com",
 	"description": "Failure on build",
-	"tags: [
+	"tags": [
 		".NET6",
 		"Build",
 		"package"
@@ -52,7 +52,7 @@ Location: {{host}}/Tickets/{{id}}
 	"description": "Failure on build",
 	"submitDate": "2022-01-01T00:00:00",
 	"editDate": "2022-01-01T00:00:00",
-	"tags: [
+	"tags": [
 		".NET6",
 		"Build",
 		"package"
@@ -82,7 +82,7 @@ GET /tickets/{{id}}
 	"description": "Failure on build",
 	"submitDate": "2022-01-01T00:00:00",
 	"editDate": "2022-01-01T00:00:00",
-	"tags: [
+	"tags": [
 		".NET6",
 		"Build",
 		"package"
@@ -106,7 +106,7 @@ PUT /breakfasts/{{id}}
 	"description": "Failure on build",
 	"submitDate": "2022-01-01T00:00:00",
 	"editDate": "2022-01-01T00:00:00",
-	"tags: [
+	"tags": [
 		".NET6",
 		"Build",
 		"package"
