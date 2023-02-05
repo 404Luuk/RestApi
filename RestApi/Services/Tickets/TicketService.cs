@@ -1,4 +1,6 @@
+using ErrorOr;
 using RestApi.Models;
+using RestApi.ServiceErrors;
 
 namespace RestApi.Services.Tickets;
 
@@ -16,9 +18,10 @@ public class TicketService : ITicketService
         _tickets.Remove(id);
     }
 
-    public Ticket GetTicket(Guid id)
+    public ErrorOr<Ticket> GetTicket(Guid id)
     {
-        return _tickets[id];
+        if(_tickets.TryGetValue(id, out var ticket)) { return ticket; }
+        return Errors.Ticket.NotFound;
     }
 
     public void UpsertTicket(Ticket ticket)

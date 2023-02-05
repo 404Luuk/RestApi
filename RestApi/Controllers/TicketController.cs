@@ -1,13 +1,14 @@
+using ErrorOr;
 using Microsoft.AspNetCore.Mvc;
 using RestApi.Contracts.Ticket;
 using RestApi.Models;
+using RestApi.ServiceErrors;
 using RestApi.Services.Tickets;
 
 namespace RestApi.Controllers;
 
-[ApiController]
-[Route("tickets")]
-public class TicketController : ControllerBase 
+[Route("/tickets")]
+public class TicketController : ApiController 
 {
     private readonly ITicketService _ticketService;
 
@@ -48,11 +49,18 @@ public class TicketController : ControllerBase
     }
 
     [HttpGet("{id:guid}")]
-    public IActionResult ReturnTicket(Guid id) 
+    public IActionResult ReturnTicket(Guid id)
     {
-        Ticket ticket = _ticketService.GetTicket(id);
+        ErrorOr<Ticket> getTicketResult = _ticketService.GetTicket(id);
 
-        var response = new TicketResponse(
+        return getTicketResult.Match(
+            ticket => Ok(MapTicketResponse(ticket)),
+            errors => Problem(errors));
+    }
+
+    private static TicketResponse MapTicketResponse(Ticket ticket)
+    {
+        return new TicketResponse(
             ticket.Id,
             ticket.Username,
             ticket.Email,
@@ -61,8 +69,6 @@ public class TicketController : ControllerBase
             ticket.EditDate,
             ticket.Tags
         );
-
-        return Ok(response);
     }
 
     [HttpPut("{id:guid}")]
@@ -79,7 +85,7 @@ public class TicketController : ControllerBase
         );
         _ticketService.UpsertTicket(ticket);
 
-        //return 201 if req == new
+        //todo return 201 if req == new
         return NoContent();
     }
 
