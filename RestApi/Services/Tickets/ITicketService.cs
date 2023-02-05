@@ -4,8 +4,8 @@ namespace RestApi.Services.Tickets;
 
 public interface ITicketService 
 {
-    void CreateTicket(SupportTicket ticket);
+    void CreateTicket(Ticket ticket);
     void DeleteTicket(Guid id);
-    SupportTicket GetTicket(Guid id);
-    void UpsertTicket(SupportTicket ticket);
+    Ticket GetTicket(Guid id);
+    void UpsertTicket(Ticket ticket);
 }

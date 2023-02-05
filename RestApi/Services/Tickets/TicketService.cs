@@ -5,8 +5,8 @@ namespace RestApi.Services.Tickets;
 public class TicketService : ITicketService
 {
     //TODO: Link database && reWrite service
-    private static readonly Dictionary<Guid, SupportTicket> _tickets = new();
-    public void CreateTicket(SupportTicket ticket)
+    private static readonly Dictionary<Guid, Ticket> _tickets = new();
+    public void CreateTicket(Ticket ticket)
     {
         _tickets.Add(ticket.Id, ticket);
     }
@@ -16,12 +16,12 @@ public class TicketService : ITicketService
         _tickets.Remove(id);
     }
 
-    public SupportTicket GetTicket(Guid id)
+    public Ticket GetTicket(Guid id)
     {
         return _tickets[id];
     }
 
-    public void UpsertTicket(SupportTicket ticket)
+    public void UpsertTicket(Ticket ticket)
     {
         _tickets[ticket.Id] = ticket;
     }
